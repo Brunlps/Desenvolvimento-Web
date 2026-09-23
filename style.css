@@ -1,0 +1,45 @@
+.destaque {
+  width: 100%;
+}
+.main {
+  background-color: blueviolet;
+  text-align: center;
+}
+
+& #feedback {
+  /* Tamanho da fonte */
+  font-size: 20px;
+  p {
+    /* Alinha texto ao centro */
+    text-align: center;
+  }
+  &strong {
+    & em {
+      /* Dar cor no texto */
+      color: rgba(235, 6, 6, 0.976);
+    }
+  }
+}
+.diferencial {
+  background: #ffffff;
+
+  & .lista-diferencial {
+    display: inline-block;
+    vertical-align: top;
+  }
+  & .itens {
+    font-size: 20px;
+    /* Estiliza o texto para itálico */
+    font-style: italic;
+    /* Estilo de lista sem estilo */
+    list-style: none;
+    /* Largura de 20% */
+    width: 50%;
+    margin-right: 15%;
+  }
+
+  & .img-diferencial {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
