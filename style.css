@@ -1,9 +1,16 @@
+.titulo-principal{
+  background-color: blueviolet;
+  text-align: center;
+  padding: 35px;
+}
+
 .destaque {
   width: 100%;
 }
-.main {
+#main {
   background-color: blueviolet;
   text-align: center;
+  padding: 35px;
 }
 
 & #feedback {
@@ -20,12 +27,18 @@
     }
   }
 }
-.diferencial {
+#diferencial {
   background: #ffffff;
 
   & .lista-diferencial {
+    border: 1px solid red;
     display: inline-block;
+     /*Redus o bloco da lista em 50% da tela*/
+
     vertical-align: top;
+    /*Alinha os elemntos na verticao no topo da lista*/
+    margin-right: 15%;
+    width: 20%;
   }
   & .itens {
     font-size: 20px;
