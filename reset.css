@@ -1,0 +1,132 @@
+/* ==========================================================
+   Reset CSS moderno
+   Remove os estilos padrão do navegador e cria uma base
+   previsível para começar qualquer projeto.
+   ========================================================== */
+
+/* 1. Box model previsível: padding e borda entram na largura */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove margens e paddings padrão */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Evita que o texto aumente sozinho ao girar o celular */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* 4. Rolagem suave, só para quem não pediu menos movimento */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* 5. Base do corpo da página */
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* 6. Títulos com entrelinha menor e quebra equilibrada */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+/* 7. Parágrafos sem "viúvas" (palavra sozinha na última linha) */
+p {
+  text-wrap: pretty;
+}
+
+/* 8. Palavras longas (URLs, e-mails) quebram em vez de estourar o layout */
+p, h1, h2, h3, h4, h5, h6, li, blockquote {
+  overflow-wrap: break-word;
+}
+
+/* 9. Mídia se comporta como bloco e nunca ultrapassa o container */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 10. Formulários herdam a fonte da página */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* 11. Botões sem visual padrão e com cursor de clique */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* 12. Textarea só redimensiona na vertical */
+textarea {
+  resize: vertical;
+}
+
+/* 13. Listas sem marcadores quando têm role="list"
+       (mantém a semântica para leitores de tela) */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* 14. Links herdam a cor do texto */
+a {
+  color: inherit;
+  text-decoration-skip-ink: auto;
+}
+
+/* 15. Tabelas sem espaço entre células */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 16. Foco visível só para navegação por teclado */
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+/* 17. Respeita quem prefere menos animação */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 18. Cria um contexto de empilhamento isolado na raiz
+       (útil em React/Next, ajuste o id se precisar) */
+#root,
+#__next {
+  isolation: isolate;
+}

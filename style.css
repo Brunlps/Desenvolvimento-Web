@@ -1,5 +1,5 @@
 .titulo-principal{
-  background-color: blueviolet;
+  background-image: linear-gradient(#ee3636, #1b1b1a);
   text-align: center;
   padding: 35px;
 }
@@ -8,7 +8,7 @@
   width: 100%;
 }
 #main {
-  background-color: blueviolet;
+  background-image: linear-gradient(#ee3636, #1b1b1a);
   text-align: center;
   padding: 35px;
 }

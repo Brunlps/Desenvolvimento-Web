@@ -1,0 +1,39 @@
+header{
+    background-image: linear-gradient(#ee3636, #1b1b1a);
+}
+
+.box {
+    border: #1dec2f solid 1px;
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+nav{/*Posibilita a movimentção do elemento que estao nessa tag*/
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 0 0 25px;
+}
+
+nav a{
+    /* Retirando decorações padrões do navegador */
+    list-style: none;
+    text-decoration: none;
+
+    /* cor */
+    color: rgb(145, 114, 114);
+
+    /* Modificando elementos */
+    text-transform: uppercase;
+    font-weight: bold;
+
+    /* Posicionamento */
+}
+
