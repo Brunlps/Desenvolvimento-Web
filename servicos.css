@@ -1,28 +1,28 @@
-header{
-    background-image: linear-gradient(#ee3636, #1b1b1a);
+header {
+    background-image: linear-gradient(#be5454, #073e65);
 }
 
 .box {
-    border: #1dec2f solid 1px;
     width: 940px;
     position: relative;
     margin: 0 auto;
-    
+
 }
 
-nav{/*Posibilita a movimentção do elemento que estao nessa tag*/
+nav {
+    /*Posibilita a movimentção do elemento que estao nessa tag*/
     position: absolute;
     top: 100px;
     right: 0;
 }
 
-nav li{
+nav li {
     display: inline-block;
     font-size: 20px;
     margin: 0 0 0 25px;
 }
 
-nav a{
+nav a {
     /* Retirando decorações padrões do navegador */
     list-style: none;
     text-decoration: none;
@@ -37,3 +37,33 @@ nav a{
     /* Posicionamento */
 }
 
+.servicos-conteiner {
+    background-color: #073e65;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.servicos-conteiner li {
+    display: inline-block;
+    text-align: center;
+    padding: 12px;
+    margin: 1.5%;
+}
+
+.servicos-conteiner h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.servicos-conteiner .img-servico{
+    width: 250px;
+    border-radius: 5px;
+}
+
+.servicos-conteiner .decricao{
+   margin-bottom: 5px;
+}
+
+.servicos-conteiner .preco{
+    font-size: 25px;
+}
