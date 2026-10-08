@@ -1,5 +1,5 @@
 header {
-    background-image: linear-gradient(#be5454, #073e65);
+    background-image: linear-gradient(#762294bd, #0e3d2d);
 }
 
 .box {
@@ -28,7 +28,8 @@ nav a {
     text-decoration: none;
 
     /* cor */
-    color: rgb(145, 114, 114);
+    color: aliceblue;
+;
 
     /* Modificando elementos */
     text-transform: uppercase;
@@ -36,11 +37,17 @@ nav a {
 
     /* Posicionamento */
 }
-
+/* main {
+    background-image: url("assets/cachorro-feliz-capa.jpg");
+    background-repeat: no-repeat;
+    height: 940px;
+    
+} */
 .servicos-conteiner {
-    background-color: #073e65;
+    background-color: #0e3d2d;
     width: 940px;
     margin: 0 auto;
+    
 }
 
 .servicos-conteiner li {
@@ -48,6 +55,8 @@ nav a {
     text-align: center;
     padding: 12px;
     margin: 1.5%;
+    color: aliceblue;
+
 }
 
 .servicos-conteiner h2{
