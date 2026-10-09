@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contato.css" />
     <link rel="stylesheet" href="reset.css" />
-    <title>Document</title>
+    <title>Contato | Pet Shop Cão Feliz</title>
 </head>
 
 <body>
@@ -35,7 +35,44 @@
 
     <main>
         <div class="contato">
-            
+            <h2>Entre em contato conosco</h2>
+            <form action="mailto:contato@petshopcaofeliz.com" method="POST" enctype="text/plain">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea cols="50" rows="5" id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." required></textarea>
+<br>
+                <button type="submit">Enviar</button>
+
+                <div class="form-group">
+                    <p>Como podemos entrar em contato?</p>
+                    
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                        Whatsapp
+                    </label>
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                        Celular
+                    </label>
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                        Email
+                    </label>
+                </div>
+
+                <label for="" class="checkbox">
+                    <input type="checkbox">
+                    Quero receber e-mails promocionais do Pet Shop Cão Feliz
+                </label>
+            </form>
         </div>
     </main>
 
