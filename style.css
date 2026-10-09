@@ -1,16 +1,71 @@
-.titulo-principal{
-  background-image: linear-gradient(#ee3636, #1b1b1a);
-  text-align: center;
-  padding: 35px;
+header {
+    background-image: linear-gradient(#762294bd, #0e3d2d);
+}
+
+.box-principal {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+/* O menu esta muito inregecido */
+nav {
+    /*Posibilita a movimentção do elemento que estao nessa tag*/
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 0 0 25px;
+}
+
+nav a {
+    /* Retirando decorações padrões do navegador */
+    list-style: none;
+    text-decoration: none;
+
+    /* cor */
+    color: aliceblue;
+    ;
+
+    /* Modificando elementos */
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: overline;
+
+
+    /* Posicionamento */
+}
+
+nav a:hover {
+    color: #45e9b2bb;
+    text-decoration: underline;
 }
 
 .destaque {
-  width: 100%;
+  background-image: url(assets/capa-destaque.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 80vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-#main {
-  background-image: linear-gradient(#ee3636, #1b1b1a);
-  text-align: center;
-  padding: 35px;
+.texto-conteiner{
+  max-width: 50%;
+  padding: 5px 15px;
+  margin: 5rem 2rem;
+  text-align: left;
+  color: #ffffff;
+  box-shadow: 2rem;
+  border: 2px solid wheat;
+  box-sizing: content-box;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 & #feedback {
@@ -53,6 +108,20 @@
 
   & .img-diferencial {
     display: inline-block;
-    vertical-align: top;
+    /* align-items: top; */
   }
+}
+
+footer{
+    background-color: #0e3d2d;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 100;
+}
+
+.img-footer{
+    width: 10%;
 }

@@ -45,56 +45,13 @@ nav a:hover {
     color: #45e9b2bb;
     text-decoration: underline;
 }
-
-/* main {
-    background-image: url("assets/cachorro-feliz-capa.jpg");
+main{
+    background-image: url("assets/Produtos-para-pets.webp");
     background-repeat: no-repeat;
-    height: 940px;
-    
-} */
-.servicos-conteiner {
-    width: 940px;
-    margin: 10rem auto;
-
-}
-
-.servicos-conteiner li {
-    display: inline-block;
-    text-align: center;
-    padding: 12px;
-    margin: 10px;
-    color: #0e3d2d;
-    border: #0e3d2d solid 1px;
-    border-radius: 20px;
-}
-
-.servicos-conteiner li:hover {
-    border-color: #45e9b2bb;
-}
-
-.servicos-conteiner h2 {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    
-}
-
-.servicos-conteiner li:hover h2 {
-    color: #45e9b2bb;
-}
-
-.servicos-conteiner .img-servico {
-    width: 250px;
-    border-radius: 5px;
-}
-
-.servicos-conteiner .decricao {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-.servicos-conteiner .preco {
-    font-size: 25px;
+    background-size: cover;
+    background-position: center;
+    min-height: 90vh;
+    display: flex;
 }
 
 footer{
