@@ -46,17 +46,15 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* 
 main {
     background-image: url("assets/Produtos-para-pets.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    & h2 {
+     & h2 {
         color: #fff;
         font-size: 3rem;
         text-align: center;
@@ -65,11 +63,15 @@ main {
 
 }
 
+.conteiner-contato {
+    
+}
+
 form {
     background-color: rgba(14, 61, 45, 0.8);
     display: inline-block;
-    /* flex-direction: column; */
-    /* justify-content: center; */
+    flex-direction: column;
+    justify-content: center;
     width: 940px;
     height: auto;
     margin: 20px 0;
@@ -105,7 +107,7 @@ form {
 
     }
 
-    & .form-group{
+    & .form-group {
         display: flex;
         justify-content: space-between;
         right: 0;
@@ -115,7 +117,47 @@ form {
         margin: 20px 0;
     }
 
-}
+} */
+
+/* .contato-conteiner {
+    background-image: url("assets/cachorro-feliz-capa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 90vh;
+
+    & .titulo-contato {
+        margin: auto 0;
+        padding: 3rem;
+        text-align: center;
+
+        & h2 {
+            color: #0e3d2d;
+            box-shadow: #ffffff;
+        }
+    } */
+
+    /* & .formulario-contato {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: rgba(14, 61, 45, 0.8);
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        width: 940px;
+        height: auto;
+        margin: 20px 0;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
+} */
+
+
 
 footer {
     background-color: #0e3d2d;

@@ -4,20 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contato.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
-    <title>Contato | Pet Shop Cão Feliz</title>
+    <title>Fale Conosco | Pet Shop Cão Feliz</title>
 </head>
 
 <body>
     <header>
         <div class="box">
             <h1>
-                <img style="width: 150px" src="assets/logo-pet-shop-cao-feliz.png"
-                    alt="Logo com um cachorro e um gato." />
+                <img style="width: 150px" src="assets/logo-pet-shop-cao-feliz.png" alt="Logo do pet shop" />
             </h1>
 
-            <nav>
+            <nav class="conteiner-contato">
                 <ul>
                     <li>
                         <a href="index.html">Home</a>
@@ -34,50 +33,70 @@
     </header>
 
     <main>
-        <div class="contato">
-            <h2>Entre em contato conosco</h2>
-            <form action="mailto:contato@petshopcaofeliz.com" method="POST" enctype="text/plain">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+        <form class="formulario-contato" action="mailto:contato@petshopcaofeliz.com" method="POST" enctype="text/plain">
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" class="input-text" required>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" class="input-text" required>
 
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required>
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone" class="input-text" required>
 
-                <label for="mensagem">Mensagem:</label>
-                <textarea cols="50" rows="5" id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." required></textarea>
-<br>
-                <button type="submit">Enviar</button>
+                <label for="message">Mensagem: </label>
+                <textarea cols="50" rows="5" id="message" name="mensagem" placeholder="Digite sua mensagem aqui..."
+                    class="input-text" required></textarea>
 
-                <div class="form-group">
-                    <p>Como podemos entrar em contato?</p>
-                    
+                <fieldset class="form-group">
+                    <legend>Como podemos entrar em contato?</legend>
+
                     <label for="radio-whatsapp">
-                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                        <input type="radio" name="contact" value="whatsapp" id="radio-whatsapp" checked>
                         Whatsapp
                     </label>
-                    <label for="radio-whatsapp">
-                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                    <label for="radio-celula">
+                        <input type="radio" name="contact" value="celula" id="radio-celular">
                         Celular
                     </label>
-                    <label for="radio-whatsapp">
-                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                    <label for="radio-email">
+                        <input type="radio" name="contact" value="email" id="radio-email">
                         Email
                     </label>
-                </div>
+                </fieldset>
 
-                <label for="" class="checkbox">
-                    <input type="checkbox">
-                    Quero receber e-mails promocionais do Pet Shop Cão Feliz
-                </label>
-            </form>
-        </div>
+            </div>
+
+
+            <label for="" class="checkbox">
+                <input type="checkbox" id="news" checked>
+                Quero receber e-mails promocionais do Pet Shop Cão Feliz
+            </label>
+
+            <input type="submit" value="Enviar!" class="enviar">
+
+        </form>
+
+        <table class="tabela">
+            <tr>
+                <!-- th -  para título da tabela -->
+                <th class="titulo-tabela">Segunda à sexta</th>
+                <th class="titulo-tabela">Sábado</th>
+                <th class="titulo-tabela">Domingo</th>
+            </tr>
+
+            <tr>
+                <!-- td - Conteúdo da tabela -->
+                <td class="conteudo-tabela">6h - 20h</td>
+                <td class="conteudo-tabela">10h - 18h</td>
+                <td class="conteudo-tabela">12h - 18h</td>
+            </tr>
+        </table>
+
     </main>
 
     <footer>
-        <img class="img-footer" src="assets/logo-pet-shop-cao-feliz.png" alt="Logo com um cachorro e um gato." />
+        <img class="img-footer" src="assets/logo-pet-shop-cao-feliz.png" alt="Logo do pet shop" />
         <p>&copy Copyright 2026</p>
     </footer>
 </body>
